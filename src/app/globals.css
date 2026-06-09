@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111111;
+  --color-accent: #2563EB;
+  --color-neutral-dark: #1f2937;
+  --color-neutral-light: #f3f4f6;
+  
+  --font-sans: var(--font-geist-sans), "Inter", "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #111111;
+  --accent: #2563EB;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Premium micro-interactions and text styling */
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  color: transparent;
+}
+
+.text-stroke-black {
+  -webkit-text-stroke: 1px rgba(17, 17, 17, 0.15);
+  color: transparent;
+}
+
+.custom-zoom-image {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-zoom-image:hover {
+  transform: scale(1.08);
+}
+
+/* Filter drawer slide-in animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
