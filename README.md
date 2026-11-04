@@ -1,3 +1,5 @@
+New Verion of Application is Available
+
 # Athletica Sportswear — E-Commerce Frontend
 
 A modern sportswear e-commerce storefront and admin dashboard built with **Next.js 16**, **React 19**, and **TypeScript**. The app is a client-rendered SPA that talks to a separate REST API backend (default port `5000`). All product, cart, order, and auth data is fetched from the backend at runtime.
